@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+    awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poopins:wght@300;
+    400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <main>
+        <div class="reg-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="reg-info">
+                        <h2>Learn to code by watching others</h2>
+                        <p>See how experienced developers solve problems in real-time. 
+                        Watching scripted tutorial is great, but understanding how developers 
+                        think is invaluable.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="reg-area">
+                        <div class="form-int">
+                            <p>Try it free 7days <span>then $20/mo. thereafter</span></p>
+                        </div>
+                        <div class="form-area"></div>
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">login</span>
+                                <span onclick="register()">register</span>
+                                <hr id="indicator">
+                            </div>
+                            <form action="" id="loginform">
+                                <input type="email" name="email" placeholder="Email Address" required="">
+                                <input type="password" name="password" placeholder="Password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at 
+                                least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="">
+                                <button type="submit" class="btn">login</button>
+                                <a href="" class="form-a">forgot Password?</a>
+                            </form>
+                            <form action="" id="regform">
+                                <input type="text" name="first-name" placeholder="First Name" maxlength="10" minlength="3" required="">
+                                <input type="text" name="last-name" placeholder="Last Name" maxlength="10" minlength="3" required="">
+                                <input type="email" name="email" placeholder="Email Address" required="">
+                                <input type="password" name="password" placeholder="Password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at 
+                                least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="">
+                                <button type="submit" class="btn">claim your free trial</button>
+                                <p>By clicking the button, your agreeing to our <span>Terams and Conditions</span></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- js for toggle form -->
+    <script>
+        var loginform = document.getElementById("loginform");
+        var regform = document.getElementById("regform");
+        var indicator = document.getElementById("indicator");
+            function register(){
+                regform.style.transform = "translateX(0rem)";
+                loginform.style.transform = "translateX(0rem)";
+                indicator.style.transform = "translateX(6rem)";
+            }
+            function login(){
+                regform.style.transform = "translateX(38rem)";
+                loginform.style.transform = "translateX(38rem)";
+                indicator.style.transform = "translateX(0rem)";
+            }
+    </script>
+
+
+
+</body>
+</html>

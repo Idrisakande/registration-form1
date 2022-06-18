@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    font-size: 100%;
+    font-family: "Poppins", sans-serif;
+}
+main {
+    background-color: hsl(0, 100%, 74%);
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 8rem 0;
+    margin: 0 5rem;
+}
+.reg-container {
+    width: 80%;
+    margin: auto;
+}
+.row {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    text-align: start;
+}
+.col-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.reg-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 9rem 4rem;
+}
+.reg-info h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+}
+.reg-info p {
+    font-size: 0.8rem;
+    color: #f5f5f5;
+    margin-top: 1.5rem;
+}
+.reg-area {
+    width: 30rem;
+    margin: auto;
+}
+.form-int {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: hsl(248, 32%, 49%);
+}
+.form-int p {
+    color: #fff;
+    font-size: 0.9rem;
+}
+.form-int p span {
+    font-size: 0.75rem;
+    color: #F5F5F5;
+}
+.form-container{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    height: 30rem;
+    padding: 2rem 0rem;
+    overflow: hidden;
+}
+.form-container .form-btn span {
+    color: #555;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 6rem;
+    padding: 0.2rem 0;
+}
+#indicator {
+    height: 0.2rem;
+    width: 6rem;
+    top: 0.5rem;
+    border: none;
+    background: #ff523b;
+    margin-top: 0.5rem;
+    transform: translateX(6rem);
+    transition: transform 1s;
+}
+.form-btn {
+    display: inline-block;
+}
+.form-container form {
+    position: absolute;
+    width: 30rem;
+    margin: auto;
+    padding: 0 2rem;
+    top: 6rem;
+    transition: transform 1s;
+}
+form input {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+form input:focus {
+    outline: none;
+    color: hsl(0, 100%, 74%);
+    border-color: hsl(0, 100%, 74%);
+}
+form .btn {
+    width: 100%;
+    background-color: hsl(159, 59%, 51%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+}
+form .btn:hover {
+    background: #563434;
+}
+.col-2 form p {
+    font-size: 0.8rem;
+    color: #777;
+}
+.col-2 form p span  {
+    color:  hsl(0, 100%, 74%);
+    font-size: 0.75rem;
+}
+.col-2 form a {
+    font-size: 0.75rem;
+    color: #555;
+    text-transform: capitalize;
+    margin-top: 0rem;
+    background: none;
+}
+.col-2 form a:hover {
+    background: none;
+    color: #ff523b;
+}
+#loginform {
+    left: -38rem;
+}
+#regform {
+    left: 0;
+}
+@media only screen and (max-width: 1024px) {
+    main {
+        padding: 5rem 0;
+        margin: 0 3rem;
+    }
+    .reg-container {
+        width: 95%;
+    }
+    .reg-info {
+        padding: 9rem 3rem;
+    }
+    .reg-info h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .reg-info p {
+        font-size: 0.75rem;
+        margin-top: 1.5rem;
+    }
+    .reg-area {
+        width: 23rem;
+    }
+    .form-container form {
+        width: 23rem;
+        padding: 0 2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 4.5rem 0;
+        margin: 0 1.5rem;
+    }
+    .reg-info {
+        padding: 12rem 2rem;
+    }
+    .reg-container {
+        width: 100%;
+        margin: auto;
+    }
+    .reg-info h2 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .reg-info p {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+    }
+    .reg-area {
+        width: 19rem;
+    }
+    .form-container form {
+        width: 19rem;
+        padding: 0 1.5rem;
+    }
+    .col-2 form p {
+        font-size: 0.7rem;
+    }
+    .col-2 form p span  {
+        font-size: 0.73rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    main {
+        margin: 0 0.8rem;
+    }
+    .reg-info {
+        padding: 3rem 2rem;
+    }
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .reg-area {
+        width: 20rem;
+    }
+    .form-container form {
+        width: 20rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .reg-info {
+        padding: 2rem 2rem;
+    }
+    .reg-info h2 {
+        font-size: 1.45rem;
+    }
+    .reg-info p {
+        font-size: 0.64rem;
+    }
+    .reg-area {
+        width: 19rem;
+        margin-top: 2rem;
+    }
+    .form-container form {
+        width: 19rem;
+    }
+    .form-int p {
+        font-size: 0.8rem;
+    }
+    form input {
+        font-size: 0.7rem;
+    }
+    form .btn {
+        font-size: 0.65rem;
+    }
+    
+    .col-2 form p {
+        font-size: 0.7rem;
+    }
+    .col-2 form p span  {
+        line-height: 1rem;
+        font-size: 0.72rem;
+    }
+
+}
+@media only screen and (max-width: 320px) {
+    .reg-info h2 {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .reg-info p {
+        line-height: 0.8rem;
+        font-size: 0.54rem;
+    }
+    .reg-area {
+        width: 16.5rem;
+        margin-top: 1rem;
+    }
+    .form-container form {
+        width: 16.5rem;
+    }
+    .form-int p {
+        font-size: 0.75rem;
+    }
+    form input {
+        font-size: 0.62rem;
+    }
+    form .btn {
+        font-size: 0.63rem;
+    }
+    .col-2 form p {
+        font-size: 0.67rem;
+    }
+    .col-2 form p span  {
+        font-size: 0.72rem;
+    }
+
+}
